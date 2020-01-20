@@ -10,7 +10,7 @@ public class Tcp {
     public static void main(String[] args) {
         Socket socket= null;
             try {
-                BuonAnno bn= new BuonAnno();
+                BuonAnno bn= new BuonAnno(5);
                 ServerSocket serverSocket=new ServerSocket(2000);
                 serverSocket.setSoTimeout(5000);
                 bn.start();

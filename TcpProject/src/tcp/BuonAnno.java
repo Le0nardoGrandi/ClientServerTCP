@@ -5,9 +5,13 @@ import java.util.logging.Logger;
 
 public class BuonAnno extends Thread {
     public int  n=0;
+    private int t=0;
+    BuonAnno(int tempo){
+        t=tempo;
+    }
     @Override
     public void run(){
-        for(int c=5;c!=0;c-=1){
+        for(int c=t;c!=0;c-=1){
                 try {
                     if(n==1){
                         System.out.println("STOOOOOOOOOP!!!!");
